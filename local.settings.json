@@ -1,0 +1,18 @@
+{
+  "IsEncrypted": false,
+  "AzureWebJobsFeatureFlags": "EnableWorkerIndexing",
+  "Values": {
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName={AccountName};AccountKey={AccountKey};EndpointSuffix=core.windows.net",
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+    "myfreedbresourcegroaebb_STORAGE": "DefaultEndpointsProtocol=https;AccountName={AccountName};AccountKey={AccountKey};EndpointSuffix=core.windows.net"
+  },
+  "DurableTask": {
+    "HubName": "DurableTaskHub",
+    "orchestratorOptions": {
+      "maxConcurrentOrchestratorFunctions": 15
+    },
+    "activityOptions": {
+      "maxConcurrentActivityFunctions": 10
+    }
+  }
+}
